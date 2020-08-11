@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 
-EMAIL = 'junizj@gmail.com'
+EMAIL = 'sender@gmail.com'
 
 try:
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -21,8 +21,8 @@ except :
 
 
 msg = MIMEMultipart()
-msg['From'] = 'Joon J '
-msg['To'] = 'jtj308@naver.com'
+msg['From'] = 'Joon J'
+msg['To'] = 'to@email.com'
 msg['Subject'] = 'Just a test message'
 
 
@@ -44,7 +44,7 @@ msg.attach(p)
 
 text = msg.as_string()
 try:
-    server.sendmail(EMAIL,'jtj308@naver.com', text)
+    server.sendmail(EMAIL,'to@email.com', text)
     server.quit()
 except:
     print('Send error')
