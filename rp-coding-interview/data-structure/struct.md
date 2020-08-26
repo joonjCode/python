@@ -27,3 +27,22 @@ All immutable objects are hashable, but not the other way around
 .clear()
 .update()
 .intersection_update() : &= 
+
+
+
+# Generator
+next()
+
+```
+>>> g = (x for x in [1, 2, 3])
+>>> g
+<generator object>
+>>> next(g)
+1
+>>> next(g)
+2
+>>> next(g)
+3
+>>> next(g)
+StopIteration
+```
