@@ -46,3 +46,10 @@ next()
 >>> next(g)
 StopIteration
 ```
+
+
+# Python standard Lib
+- String module
+- itertools Module
+- functools Module 
+- doctest Module
