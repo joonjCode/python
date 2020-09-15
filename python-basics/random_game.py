@@ -4,8 +4,10 @@ import sys
 first_num = int(sys.argv[1])
 second_num = int(sys.argv[2])
 answer = randint(first_num,second_num)
+# randint(1, 100) random int
 
-# print(answer)
+
+print(answer)
 while True:
     try:
         # input from the user

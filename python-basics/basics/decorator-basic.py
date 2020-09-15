@@ -1,21 +1,23 @@
+
 def my_decorator(func):
-  def wrap_func(*args, **kwargs):
-    print('*'*10)
-    func(*args, **kwargs)
-    print('*'*10)
-  return wrap_func
+    def wrap_func(*args, **kwargs):
+        print('*'*10) #Before
+        func(*args, **kwargs) # not function yet
+        print('*'*10) #After
+    return wrap_func
 
-
+# find_all('div', attrs = {'class':'dfddfddf'})
+# OOP
 @my_decorator
-def hello(name, emoji = ':('):
-  print(f'hello {name}', emoji)
+def hello(name, emoji = ':)'):
+    print(f'hello {name}', emoji)
 
-@my_decorator
-def bye():
-  print('bye')
+# @my_decorator
+# def bye():
+#   print('bye')
 
 hello(name = 'niz')
-bye()
+# bye()
 
 
 
