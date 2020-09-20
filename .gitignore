@@ -144,3 +144,4 @@ dmypy.json
 
 python-scripting/twitter-api/.env
 python-scripting/message-sender/.env
+python-scripting/seleniumScraper/conf.py
