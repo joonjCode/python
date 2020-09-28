@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/mnt/c/Users/Joon/Projects/tutorial/python/venv/bin/python3.8",
+    "python.pythonPath": "venv/bin/python",
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true
 }
