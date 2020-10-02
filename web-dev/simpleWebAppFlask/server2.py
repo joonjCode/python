@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from scarpe import run as scrape_runner
+from scrape import run as scrape_runner
 app = FastAPI()
 
 @app.get('/')
